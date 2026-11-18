@@ -3,8 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LeDacHuy.iml" filepath="$PROJECT_DIR$/.idea/LeDacHuy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/course-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/course-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/course-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/course-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/student-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/student-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/student-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/student-service.test.iml" />
     </modules>
   </component>
 </project>
