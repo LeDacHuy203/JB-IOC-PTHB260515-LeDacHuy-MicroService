@@ -1,0 +1,18 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false # Tắt chế độ tự bảo vệ trong môi trường dev/test
+    eviction-interval-timer-in-ms: 3000
+  client:
+    register-with-eureka: false # Eureka Server không cần tự đăng ký vào chính nó
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

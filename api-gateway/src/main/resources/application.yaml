@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: student-service-route
+              uri: lb://student-service
+              predicates:
+                - Path=/api/students/**, /api/student/**
+            - id: course-service-route
+              uri: lb://course-service
+              predicates:
+                - Path=/api/courses/**
+
+eureka:
+  instance:
+    instance-id: localhost:${server.port}:${spring.application.name}
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
