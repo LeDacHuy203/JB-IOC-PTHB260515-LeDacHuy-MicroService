@@ -12,7 +12,5 @@ import java.util.Optional;
 
 @Repository
 public interface ICourseRepository extends JpaRepository<Course,Long> {
-    @Lock(LockModeType.PESSIMISTIC_WRITE)
-    @Query("SELECT c FROM Course c WHERE c.id = :id")
-    Optional<Course> findByIdForUpdate(@Param("id") Long id);
+
 }

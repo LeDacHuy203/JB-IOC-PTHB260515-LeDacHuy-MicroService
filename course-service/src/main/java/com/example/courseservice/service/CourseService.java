@@ -18,7 +18,7 @@ public class CourseService {
 //    Cập nhật số lượng học viên và danh sách enrolled_courses tương ứng.
     @Transactional
     public Course updateCapacityById(Long courseId) {
-        Course course = iCourseRepository.findByIdForUpdate(courseId)
+        Course course = iCourseRepository.findById(courseId)
                 .orElseThrow(() -> new RuntimeException("Không tìm thấy Id lớp: " + courseId));
 
         if (course.getCapacity() == null || course.getCapacity() <= 0) {
